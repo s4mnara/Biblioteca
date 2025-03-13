@@ -14,9 +14,7 @@ public class Livro {
     }
 
     public Livro(String titulo, String autor) {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.disponivel = true; // Por padrão, o livro é cadastrado como disponível
+        this(0, titulo, autor, true); // Define id como 0 para indicar que será gerado pelo banco
     }
 
     public int getId() {
